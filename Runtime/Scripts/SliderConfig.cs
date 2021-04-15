@@ -8,8 +8,10 @@
 //	See the License for the specific language governing permissions and
 //	limitations under the License.
 
+using System;
 using UnityEngine;
 using System.Collections;
+using System.Globalization;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -210,7 +212,7 @@ namespace MaterialUI
 
         public void OnPointerDown (PointerEventData data)
 		{
-            // Updates the 'current' values to animate from
+			// Updates the 'current' values to animate from
 			currentHandleScale = handle.localScale.x;
 			currentPopupScale = popup.localScale.x;
 			currentPos = popup.localPosition.y;
